@@ -16,7 +16,10 @@ import java.util.Scanner;
 
 /**
  *
- * @author mafudge
+ * @author mafudge - of the task
+ * @author Maksim Belfer
+ *
+ * Solved 14.11.2023
  */
 public class HelloYourName2Ways {
 
@@ -24,7 +27,16 @@ public class HelloYourName2Ways {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your first name");
+        String firstName = scanner.nextLine();
+
+        System.out.println("Enter your last name");
+        String lastName = scanner.nextLine();
+
+        System.out.println("Hello, " + firstName + " " + lastName + "!");
+        System.out.println("Or should I say: " + lastName + ", " + firstName + "!");
 
     }
     
